@@ -1,6 +1,12 @@
-## 简介
+## 前言
 
 当有新评论的时候，多说是不会自动推送的，这样子要自己经常登录多说的后台查看，很不方便，所以自己写了这个自动推送的脚本。
+
+使用前，请确保已经安装了[requests](http://docs.python-requests.org/en/latest/)这个库，没有的话可以通过[pip](https://pip.pypa.io/en/latest/)安装
+
+```
+$ pip install requests
+```
 
 ## 配置
 

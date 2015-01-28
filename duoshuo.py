@@ -69,4 +69,6 @@ def run():
 
         time.sleep(stime)
 
-run()
+
+if __name__ == '__main__':
+    run()
