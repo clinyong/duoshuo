@@ -4,6 +4,7 @@ import requests
 import smtplib
 import time
 import ConfigParser
+import os
 from email.mime.text import MIMEText
 
 
@@ -40,7 +41,8 @@ def send_email(email, content):
 
 def run():
     conf = ConfigParser.RawConfigParser()
-    conf_file = r'duoshuo.conf'
+    path = os.path.dirname(__file__)
+    conf_file = os.path.join(path, 'duoshuo.conf')
     conf.read(conf_file)
 
     duoshuo = {}
