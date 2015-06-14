@@ -10,7 +10,7 @@ $ pip install requests
 
 ## 配置
 
-通过`duoshuo.conf`这个文件进行配置
+通过`conf/duoshuo.conf`这个文件进行配置
 
 ### duoshuo
 
@@ -37,3 +37,15 @@ $ pip install requests
 ### others
 
 只有一个参数，设置每隔多长时间检查一次评论数，单位是秒
+
+## Supervisor
+
+[Supervisor](http://supervisord.org/)是一款用Python写的进程管理工具，如果系统已经安装的话，可以通过下面命令操作
+
+`make supervisord`：启动supervisor进程
+
+`make start`: 启动该程序
+
+`make stop`: 停止该程序
+
+`make restart`: 重启该程序
