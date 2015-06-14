@@ -42,7 +42,7 @@ def send_email(email, content):
 def run():
     conf = ConfigParser.RawConfigParser()
     path = os.path.dirname(__file__)
-    conf_file = os.path.join(path, 'duoshuo.conf')
+    conf_file = os.path.join(path, 'conf/duoshuo.conf')
     conf.read(conf_file)
 
     duoshuo = {}
