@@ -85,8 +85,7 @@ def run():
             current_count = len(resp['response'])
         else:
             current_count = 0
-        print current_count
-        last_count = 45
+
         ##若有新内容，则把新内容遍历，并且发送详情到邮箱
         if(current_count > last_count):
             nums = current_count - last_count
